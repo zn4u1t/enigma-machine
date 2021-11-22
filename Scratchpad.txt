@@ -1,0 +1,110 @@
+class Wheels():
+    '''Create and shuffle the wheels for the machine.'''
+    global values, keys
+    values = list(pb.d.values())
+    keys = list(pb.d.keys())
+    def wheel1in():
+        shuffle(values)
+        shuffle(keys)
+        w1_in_d = dict(zip(keys, values))
+        w1_out_d = {v: k for k, v in w1_in_d.items()}
+        print (w1_in_d)
+        print (w1_out_d)
+    
+
+Wheels.wheel1in()
+Wheels.wheel2in()
+
+==========================================================================================================
+
+# The Digital Enigma
+# Wheels class
+# Zach Nault
+# 5/29/2018
+# Creates a mirror image for all dicts, and creates random wheels.
+# Change Log:
+
+from random import shuffle
+from filecall import PlugBoard as pb
+
+class Wheels(object):
+    '''Create and shuffle the wheels for the machine.'''
+    global values, keys
+    values = list(pb.d.values())
+    keys = list(pb.d.keys())
+
+    def plugboard_rev():
+        dict_in = pb.d
+        dict_out = dict_out = {v: k for k, v in dict_in.items()}
+        print ("Plugboard In =", dict_in)
+        print ("Plugboard Out =", dict_out)
+    
+    def wheel_1():
+        shuffle(values)
+        shuffle(keys)
+        dict_in = dict(zip(keys, values))
+        dict_out = {v: k for k, v in dict_in.items()}
+        #print ("Input dict =", dict_in)
+        #print ("Output dict =", dict_out)
+        print (dict_in.keys())
+        print (dict_out.values())
+
+    def wheel_2():
+        Wheels.wheel_1()
+    def wheel_3():
+        Wheels.wheel_1()
+    def wheel_4():
+        Wheels.wheel_1()
+    def wheel_5():
+        Wheels.wheel_1()
+
+Wheels.wheel_1()
+
+==========================================================================================================
+        print ("Input dict =", dict_in)
+        print ("Output dict =", dict_out)
+        #print (dict_in.keys())
+        #print (len(dict_in))
+        #print (dict_out.values())
+        #print (len(dict_out))
+
+=============================================================================================================
+
+    def multiplyer(self):
+        we = Wheels()
+        n_wheel = [we.wheel_in() for _ in range(5)]
+        o_wheel = [we.wheel_out() for _ in range(5)]
+
+work = Wheels()
+work.multiplyer()
+
+============================================================================================================
+'''def wheel_1():
+    test = Wheels()
+    test.wheel_in()
+    test.wheel_out()'''
+
+==============================================================================================================
+'''go in key side come out as value
+ex... message goes in plugboard in.
+letter becomes value of its key.
+newval1 goes into wheel 1 in
+newval1 key becomes value.
+repeats for as many wheels as necassary.'''
+
+===============================================================================================================
+
+'''def repeat():
+    while True:
+        print ("If same process is run again, it will overwrite existing code!!!")
+        restart = input("Enter another message? y/n: ")
+        if restart == 'y':
+            main()
+        elif restart == 'n':
+            kz.fatality()              #Deletes EVERYTHING!!!...Start file turned Off.   
+            sys.exit()
+        else:
+            print ("Machine Restart")
+            main()
+'''
+

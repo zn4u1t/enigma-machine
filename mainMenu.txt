@@ -1,0 +1,28 @@
+Main Menu                       	                                  	    	 	 By: Zach Nault
+The Digital Engima  		                                               	 Date: June, 2018
+
+
+
+			Welcome to the Digital Engima Machine!
+			
+       
+            	      				
+            	      		1.Instructions
+				2.Encrypt a message		
+		      		3.Decrypt a message
+				4.Exit program
+
+
+	
+		                    Make a selection please.
+
+
+
+
+
+
+
+
+     
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+0		   2		       4                   6                   8
