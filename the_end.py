@@ -8,13 +8,10 @@
 import os
 import shutil
 
+
 class KillZone:
     '''Deletes files and folders from computer.'''
     def fatality():
         shutil.rmtree('Delete_me')
-        os.remove('Plugboard_out.csv')
+        # os.remove('Plugboard_out.csv')
         #os.remove('Plugboard dictionary.txt')
-        
-    
-    
-    
